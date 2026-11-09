@@ -30,3 +30,12 @@ for i in range(1, 11):
         print("buzz")
     else:
         print(i)
+
+def vypocet_obvodu_telesa(delka, sirka=None):
+    if sirka is None:
+        sirka = delka
+    return 2 * (delka + sirka)
+
+delka = 5
+sirka = 3
+print (f"obvod obdelniku s delkou {delka} a sirkou {sirka} je {vypocet_obvodu_telesa(delka, sirka)}")
